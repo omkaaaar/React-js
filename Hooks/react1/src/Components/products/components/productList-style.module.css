@@ -1,0 +1,12 @@
+.buttonStyle{
+    font-size: 14px;
+    background: #e5b7eb;
+    color: #2c202e;
+    
+}
+.buttonStyle:hover{
+    font-size: 14px;
+    background: #2c202e;
+    color: #e5b7eb;
+    
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>ES6 Array methods</h1>
+
+
+    <div>
+        <h3>Some of the array methods are:</h3>
+        <ol>
+            <li>map</li>
+            <li>filter</li>
+            <li>find</li>
+            <li>some</li>
+            <li>very</li>
+            <li>includes</li>
+            <li>indexOf</li>
+            <li>findIndex</li>
+        </ol>
+    </div>
+    <div style="padding: 20px; border: 2px solid red;">
+        <h3>map</h3>
+        <p>The <strong>map</strong> method creates a new array by applying a provided function to each element of the
+            original array. It does not modify the original array.</p>
+        <p>Example:</p>
+        <p>
+            const numbers = [1, 2, 3, 4]; <br>
+            const squared = numbers.map(num => num * num); <br>
+            console.log(squared); // Output: [1, 4, 9, 16]
+        </p>
+    </div>
+    <br>
+    <div style="padding: 20px; border: 2px solid blue;">
+        <h3>filter</h3>
+        <p>The <strong>filter</strong> method creates a new array containing all elements of the original array that
+            pass a specified condition.</p>
+        <p>Example:</p>
+        <p>
+            const numbers = [1, 2, 3, 4, 5]; <br>
+            const evenNumbers = numbers.filter(num => num % 2 === 0); <br>
+            console.log(evenNumbers); // Output: [2, 4]
+        </p>
+    </div>
+    <br>
+    <div style="padding: 20px; border: 2px solid yellow;">
+        <h3>find</h3>
+        <p>The <strong>find</strong> method returns the first element in the array that satisfies the provided
+            condition. If no element matches, it returns <code>undefined</code>.</p>
+        <p>Example:</p>
+        <p>
+            const numbers = [1, 2, 3, 4, 5]; <br>
+            const firstEven = numbers.find(num => num % 2 === 0); <br>
+            console.log(firstEven); // Output: 2
+        </p>
+    </div>
+
+
+    <br>
+    <div style="padding: 20px; border: 2px solid green;">
+        <h3>includes</h3>
+        <p>The <strong>includes</strong> method checks if an array contains a specific value and returns
+            <code>true</code> or <code>false</code>.</p>
+        <p>Example:</p>
+        <p>
+            const fruits = ["apple", "banana", "cherry"]; <br>
+            console.log(fruits.includes("banana")); // Output: true <br>
+            console.log(fruits.includes("grape")); // Output: false
+        </p>
+    </div>
+    <br>
+    <div style="padding: 20px; border: 2px solid purple;">
+        <h3>indexOf</h3>
+        <p>The <strong>indexOf</strong> method returns the first index at which a specified value is found in the array.
+            If the value is not found, it returns <code>-1</code>.</p>
+        <p>Example:</p>
+        <p>
+            const fruits = ["apple", "banana", "cherry", "banana"]; <br>
+            console.log(fruits.indexOf("banana")); // Output: 1 <br>
+            console.log(fruits.indexOf("grape")); // Output: -1
+        </p>
+    </div>
+    <br>
+    <div style="padding: 20px; border: 2px solid orange;">
+        <h3>findIndex</h3>
+        <p>The <strong>findIndex</strong> method returns the index of the first element in the array that satisfies the
+            provided condition. If no element matches, it returns <code>-1</code>.</p>
+        <p>Example:</p>
+        <p>
+            const numbers = [10, 20, 30, 40]; <br>
+            const index = numbers.findIndex(num => num > 25); <br>
+            console.log(index); // Output: 2
+        </p>
+    </div>
+    <script src="./arrayMethods.js"></script>
+</body>
+
+</html>

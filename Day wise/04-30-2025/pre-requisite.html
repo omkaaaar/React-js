@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JS PRE-REQUISITE</h1>
+    <div>
+
+        <div style="border: 2px solid red; padding: 20px;">
+            <h1>Ternary Operators</h1>
+            <p>Ternary operators in JavaScript are a shorthand way of writing conditional statements. They are written
+                using the syntax: <strong>condition ? expressionIfTrue : expressionIfFalse;</strong>
+            </p>
+
+            <p>Explanation:
+                Condition: A boolean expression that evaluates to true or false. <br>
+                ExpressionIfTrue: The code that runs if the condition is true. <br>
+                ExpressionIfFalse: The code that runs if the condition is false.
+            </p>
+
+            <p>
+                const age = 18; <br>
+                const canVote = age >= 18 ? "Yes, you can vote" : "No, you cannot vote"; <br>
+                console.log(canVote); // Output: "Yes, you can vote"
+            </p>
+
+        </div>
+        <br>
+
+        <div style="border: 2px solid blue; padding: 20px;">
+            <h1>Array and object destructuring</h1>
+            <p>Destructuring is a JavaScript feature that allows you to extract values from arrays or properties from
+                objects and assign them to variables in a concise way.</p>
+
+            <h3>Array Destructuring</h3>
+            <p>You can extract values from an array and assign them to variables:</p>
+            <p>
+                const fruits = ["apple", "banana", "cherry"]; <br>
+                const [first, second, third] = fruits; <br>
+                console.log(first); // "apple" <br>
+                console.log(second); // "banana" <br>
+                console.log(third); // "cherry"
+            </p>
+
+            <h3>Object Destructuring</h3>
+            <p>You can extract properties from an object and assign them to variables:</p>
+            <p>
+                const person = { name: "John", age: 30, city: "New York" }; <br>
+                const { name, age, city } = person; <br>
+                console.log(name); // "John" <br>
+                console.log(age); // 30 <br>
+                console.log(city); // "New York"
+            </p>
+
+        </div>
+
+        <br>
+
+        <div style="border: 2px solid green; padding: 20px;">
+            <h1>Rest and Spread Operators</h1>
+            <p>The rest and spread operators are represented by three dots (`...`) and are used to handle collections of
+                data in JavaScript.</p>
+
+            <h3>Rest Operator</h3>
+            <p>The rest operator collects multiple elements into a single array or object. It is often used in function
+                arguments or destructuring:</p>
+            <p>
+                function sum(...numbers) { <br>
+                return numbers.reduce((total, num) => total + num, 0); <br>
+                } <br>
+                console.log(sum(1, 2, 3, 4)); // Output: 10
+            </p>
+
+            <h3>Spread Operator</h3>
+            <p>The spread operator expands an array or object into individual elements. It is often used for copying or
+                merging:</p>
+            <p>
+                const arr1 = [1, 2, 3]; <br>
+                const arr2 = [...arr1, 4, 5]; <br>
+                console.log(arr2); // Output: [1, 2, 3, 4, 5]
+            </p>
+
+            <p>
+                const obj1 = { a: 1, b: 2 }; <br>
+                const obj2 = { ...obj1, c: 3 }; <br>
+                console.log(obj2); // Output: { a: 1, b: 2, c: 3 }
+            </p>
+        </div>
+    </div>
+
+    <script src="./pre-requisite.js"></script>
+</body>
+
+</html>

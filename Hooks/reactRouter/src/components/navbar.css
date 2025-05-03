@@ -1,0 +1,17 @@
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  background-color: antiquewhite;
+  padding: 20px;
+  font-size: 25px;
+  color: black;
+}
+.list {
+  text-decoration: none;
+  color: black;
+}
+
+.list-active {
+  color: purple;
+}

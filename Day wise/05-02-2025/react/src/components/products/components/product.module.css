@@ -1,0 +1,9 @@
+.buttonStyle {
+  background-color: palevioletred;
+}
+
+.border {
+  border: 2px solid red;
+  margin: 10px;
+  padding: 10px;
+}
