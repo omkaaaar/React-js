@@ -2,20 +2,24 @@
 import "./style.css";
 
 import ProductItem from "./components/Product-item";
-// import { useState } from "react";
+import { useState } from "react";
 
 const Products = ({ name, city, productList }) => {
-  // const [flag, setFlag] = useState(true);
-  const flag = true;
-  const renderNameCity = (getFlag) => {
-    return getFlag == false ? (
-      <p>
-        My name is: {name} and im from: {city}
-      </p>
-    ) : (
-      <p>No name and city</p>
-    );
+  const [flag, setFlag] = useState(true);
+  const handleClick = () => {
+    setFlag(!flag);
   };
+
+  // const flag = true;
+  // const renderNameCity = (getFlag) => {
+  //   return getFlag == false ? (
+  //     <p>
+  //       My name is: {name} and im from: {city}
+  //     </p>
+  //   ) : (
+  //     <p>No name and city</p>
+  //   );
+  // };
 
   return (
     <>
@@ -30,9 +34,17 @@ const Products = ({ name, city, productList }) => {
         ))}
       </ul>
 
-      {renderNameCity(flag)}
+      {/* {renderNameCity(flag)} */}
 
-      <button>Change</button>
+      {flag ? (
+        <h2>
+          The name is: {name} and city is: {city}
+        </h2>
+      ) : (
+        <p>Ye yedyaaaa</p>
+      )}
+
+      <button onClick={handleClick}>Change Text</button>
     </>
   );
 };
