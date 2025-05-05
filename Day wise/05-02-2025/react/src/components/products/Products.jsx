@@ -1,13 +1,30 @@
 // import React from "react";
+// import "app.css";
 import "./style.css";
 
 import ProductItem from "./components/Product-item";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Products = ({ name, city, productList }) => {
   const [flag, setFlag] = useState(true);
+  const [count, setCount] = useState(0);
+  const [changeStyle, setChangeStyle] = useState(false);
+
   const handleClick = () => {
     setFlag(!flag);
+  };
+
+  useEffect(() => {
+    setFlag(!flag);
+  }, []);
+
+  useEffect(() => {
+    if (count === 10) setChangeStyle(true);
+  }, [count]);
+  console.log(changeStyle);
+
+  const handleIncrement = () => {
+    setCount(count + 1);
   };
 
   // const flag = true;
@@ -45,6 +62,19 @@ const Products = ({ name, city, productList }) => {
       )}
 
       <button onClick={handleClick}>Change Text</button>
+      <div>
+        <h1>UseEffect hook example</h1>
+        <p>Count is {count}</p>
+        <button
+          style={{
+            backgroundColor: changeStyle ? "#abdaf7" : "#041c2b",
+            color: changeStyle ? "#041c2b" : "#abdaf7",
+          }}
+          onClick={handleIncrement}
+        >
+          Increment
+        </button>
+      </div>
     </>
   );
 };

@@ -35,13 +35,12 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
 
+      <ClassBasedComponent />
       <Products
         name="Omkar Kallekar"
         city="Panjim"
         productList={dummyProductData}
       />
-
-      <ClassBasedComponent />
     </>
   );
 }
