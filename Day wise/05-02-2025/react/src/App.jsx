@@ -7,6 +7,7 @@ import ClassBasedComponent from "./components/Class-Based-component";
 import Users from "./components/Users";
 import ContextButton from "./components/ContextExample/ContextButton";
 import ContextText from "./components/ContextExample/ContextText";
+import UseReducerExample from "./components/useReducer";
 // import Products from "./components/products/products";
 
 function App() {
@@ -38,6 +39,12 @@ function App() {
       <br />
       <ContextText />
       <ContextButton />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <UseReducerExample />
     </>
   );
 }
