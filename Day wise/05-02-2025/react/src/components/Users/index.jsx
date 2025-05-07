@@ -28,9 +28,9 @@ const Users = () => {
   const fetchUsers = () => {
     fetchAllUsers();
   };
-  //   useEffect(() => {
-  //     fetchAllUsers();
-  //   }, []);
+  useEffect(() => {
+    alert("hellooo");
+  }, []);
 
   if (loading) return <h1>Ruk ja bhai load hone de</h1>;
   return (
